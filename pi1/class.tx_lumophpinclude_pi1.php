@@ -22,8 +22,6 @@
  * This copyright notice MUST APPEAR in all copies of the script!
  */
 
-require_once(PATH_tslib.'class.tslib_pibase.php');
-
 require_once(t3lib_extMgm::extPath('lumophpinclude') . 'lib/Snoopy.class.php');
 
 /**
