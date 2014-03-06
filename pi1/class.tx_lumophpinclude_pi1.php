@@ -395,6 +395,11 @@ class tx_lumophpinclude_pi1 extends tslib_pibase {
     }
     
     function updateValidUrlTableWithNewUrls($validURLs) {
+        
+        if (!is_array($validURLs) || 0 === count($validURLs)) {
+            return;
+        }
+
         $databaseConnection = $GLOBALS['TYPO3_DB'];
         
         // Check which URLs are already in the database
